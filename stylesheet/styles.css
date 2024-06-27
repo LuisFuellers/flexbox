@@ -5,9 +5,10 @@
     box-sizing: border-box;
 }
 
-/* Remove margin */
+/* Remove margin and Font-Family*/
 * {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Typographic tweaks! */
@@ -33,9 +34,75 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Create a root stacking context */
-#root,
-#__next {
+#root, #__next {
     isolation: isolate;
 }
 
 /* <---------------------------------------------------------> */
+
+/* Own CSS */
+header {
+    background-color: darkslategrey;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head {
+    margin: 0 160px;
+    padding: 20px 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+
+}
+
+.head-item {
+    flex-grow: 1;
+    color: white;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.logo {
+    color: white;
+}
+
+.menutext{
+    font-weight: bold;
+    color: white;
+}
+
+.light-bg {
+    background-color: lightcyan;
+    min-height: 20rem;
+}
+
+.x {
+    justify-content: center;
+}
+
+.y{
+    align-items: center;
+}
+
+.grow-2 {
+    flex-grow: 4;
+}
+
+.grow-10 {
+    flex-grow: 8;
+    align-items: flex-start;
+}
+
+h1 {
+    margin-top: 6rem;
+}
